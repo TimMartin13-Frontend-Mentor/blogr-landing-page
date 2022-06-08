@@ -1,0 +1,6 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+.hero-image {
+  background-image: linear-gradient(to right, ab.$very-light-red, ab.$light-red);
+}

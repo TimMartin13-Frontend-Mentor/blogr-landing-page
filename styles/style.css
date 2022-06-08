@@ -6,6 +6,12 @@ body {
   font-size: 16px;
 }
 
+.highlight-btn {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,9 +23,70 @@ body {
   font-size: 16px;
 }
 
+.highlight-btn {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   font-size: 16px;
+}
+
+.highlight-btn {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.highlight-btn {
+  width: 9rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+  transition: 0.3s;
+}
+
+.solid {
+  background-color: hsl(0deg, 100%, 100%);
+  color: hsl(356deg, 100%, 66%);
+}
+
+.solid:hover {
+  background-color: hsl(13deg, 100%, 72%);
+  color: hsl(0deg, 100%, 100%);
+}
+
+.outline {
+  border: 1px solid hsl(0deg, 100%, 100%);
+  background-color: transparent;
+  color: hsl(0deg, 100%, 100%);
+}
+
+.outline:hover {
+  background-color: hsl(0deg, 100%, 100%);
+  color: hsl(356deg, 100%, 66%);
+}
+
+.hero-image {
+  background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+}
+
+#navbar,
+.menu,
+.menu-left,
+.menu-right {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar, .nav-list {
+  width: 100%;
+}
+
+.menu {
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

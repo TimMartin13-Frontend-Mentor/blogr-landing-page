@@ -1,6 +1,22 @@
 // Abstracts
 @use "./../abstracts/__abstracts-dir" as ab;
 
+#navbar,
+.menu,
+.menu-left,
+.menu-right {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar, .nav-list {
+  width: 100%;
+}
+
+.menu {
+  justify-content: space-between;
+}
+
 // .card {
 //   background-color: ab.$dark-grayish-blue;
 //   border-radius: 0.7rem;

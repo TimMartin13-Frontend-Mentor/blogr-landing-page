@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
-$overpass: 'Overpass', sans-serif;
-$ubuntu: 'Ubuntu', sans-serif;
+$overpass: 'Overpass', sans-serif; // Weights 300, 600
+$ubuntu: 'Ubuntu', sans-serif;  // Weights 400, 500, 700
 
 body {
   font-family: $overpass;
   font-size: 16px;
 }
 
+.highlight-btn {
+  font-family: $ubuntu;
+  font-size: 1.02rem;
+  font-weight: 700;
+}
 // .title {
 //   font-size: 0.7rem;
 //   text-transform: uppercase;

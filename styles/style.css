@@ -6,10 +6,25 @@ body {
   font-size: 16px;
 }
 
+li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
   font-weight: 700;
+}
+
+.title {
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.3rem;
 }
 
 * {
@@ -23,10 +38,29 @@ body {
   font-size: 16px;
 }
 
+li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
   font-weight: 700;
+}
+
+.title {
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.3rem;
+}
+
+#navbar {
+  padding: 3.8rem 9.5rem;
 }
 
 body {
@@ -34,14 +68,30 @@ body {
   font-size: 16px;
 }
 
+li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
   font-weight: 700;
 }
 
+.title {
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.3rem;
+}
+
 .highlight-btn {
   width: 9rem;
+  margin-right: 1rem;
   padding: 1rem;
   border-radius: 2rem;
   border-style: none;
@@ -70,7 +120,26 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  position: relative;
+  background: url("./../images/bg-pattern-intro-desktop.svg") no-repeat center, linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background-size: cover;
+  height: 38rem;
+  border-radius: 0 0 0 120px;
+  z-index: 0;
+}
+
+.hero-copy {
+  padding: 3.9rem 0;
+  text-align: center;
+  color: hsl(0deg, 100%, 100%);
+}
+
+.title {
+  padding-bottom: 0.8rem;
+}
+
+.description {
+  padding-bottom: 3rem;
 }
 
 #navbar,
@@ -79,14 +148,29 @@ body {
 .menu-right {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-#navbar, .nav-list {
+#navbar {
+  justify-content: center;
+}
+
+.nav-list {
   width: 100%;
 }
 
 .menu {
   justify-content: space-between;
+}
+
+.logo, li {
+  list-style: none;
+  color: hsl(0deg, 100%, 100%);
+  padding: 0 1rem;
+}
+
+.logo {
+  padding-right: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

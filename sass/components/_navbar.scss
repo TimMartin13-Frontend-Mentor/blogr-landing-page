@@ -7,14 +7,29 @@
 .menu-right {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-#navbar, .nav-list {
+#navbar {
+  justify-content: center;
+} 
+
+.nav-list {
   width: 100%;
 }
 
 .menu {
   justify-content: space-between;
+}
+
+.logo, li {
+  list-style: none;
+  color: ab.$white;
+  padding: 0 1rem;
+}
+
+.logo {
+  padding-right: 3rem;
 }
 
 // .card {

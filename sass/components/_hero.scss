@@ -2,5 +2,36 @@
 @use "./../abstracts/__abstracts-dir" as ab;
 
 .hero-image {
-  background-image: linear-gradient(to right, ab.$very-light-red, ab.$light-red);
+  position: relative;
+  // background-image: linear-gradient(to right, ab.$very-light-red, ab.$light-red);
+  background: url("./../images/bg-pattern-intro-desktop.svg") no-repeat center, linear-gradient(to right, ab.$very-light-red, ab.$light-red);
+  background-size: cover;
+  height: 38rem;
+  border-radius: 0 0 0 120px;
+  z-index: 0;
+}
+
+// .intro-blob {
+//   position: absolute;
+//   // background-image: url("./../../images/bg-pattern-intro-desktop.svg");
+//   // top: -87rem;
+//   // left: -32rem;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+//   border: 1px solid green;
+// }
+
+.hero-copy {
+  padding: 3.9rem 0;
+  text-align: center;
+  color: ab.$white;
+}
+
+.title {
+  padding-bottom: 0.8rem;
+}
+
+.description {
+  padding-bottom: 3rem;
 }

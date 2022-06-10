@@ -173,6 +173,31 @@ li {
   color: hsl(356deg, 100%, 66%);
 }
 
+.free-container {
+  position: relative;
+  background: url("./../images/illustration-laptop-desktop.svg") no-repeat right;
+  background-size: 68%;
+  background-position: -17.5rem 35rem;
+  height: 85rem;
+}
+
+.free__text-container {
+  position: absolute;
+  top: 40rem;
+  right: 0;
+  padding: 7rem 10.2rem;
+  width: 60%;
+}
+
+.section__article {
+  padding-bottom: 4.5rem;
+}
+
+.section__title {
+  padding-bottom: 1.7rem;
+  color: hsl(208deg, 49%, 24%);
+}
+
 .future-container {
   position: relative;
   background: url("./../images/illustration-editor-desktop.svg") no-repeat right;
@@ -258,17 +283,12 @@ li {
   height: 24.7rem;
 }
 
-.section__article {
+.infrastructure__article {
   padding: 7.5rem 9.5rem 0 5rem;
 }
 
 .infrastructure__heading {
   padding-bottom: 1.6rem;
-}
-
-.section__title {
-  padding-bottom: 1.7rem;
-  color: hsl(208deg, 49%, 24%);
 }
 
 .white {

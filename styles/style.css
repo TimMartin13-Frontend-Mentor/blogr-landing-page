@@ -27,6 +27,23 @@ li {
   font-size: 1.3rem;
 }
 
+.future__heading {
+  font-size: 2.32rem;
+  font-weight: 600;
+}
+
+.section__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.section__paragraph {
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.055rem;
+  line-height: 1.75rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -59,8 +76,25 @@ li {
   font-size: 1.3rem;
 }
 
+.future__heading {
+  font-size: 2.32rem;
+  font-weight: 600;
+}
+
+.section__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.section__paragraph {
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.055rem;
+  line-height: 1.75rem;
+}
+
 #navbar {
-  padding: 3.8rem 9.5rem;
+  padding: 3.8rem 8rem 3.8rem 10rem;
 }
 
 body {
@@ -87,6 +121,23 @@ li {
 
 .description {
   font-size: 1.3rem;
+}
+
+.future__heading {
+  font-size: 2.32rem;
+  font-weight: 600;
+}
+
+.section__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.section__paragraph {
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.055rem;
+  line-height: 1.75rem;
 }
 
 .highlight-btn {
@@ -119,13 +170,41 @@ li {
   color: hsl(356deg, 100%, 66%);
 }
 
+.future-container {
+  position: relative;
+  background: url("./../../images/illustration-editor-desktop.svg") no-repeat right;
+  background-size: 65%;
+  background-position: 49rem 4.7rem;
+  height: 60rem;
+}
+
+.future__heading {
+  padding: 9.5rem 0 0 0;
+  text-align: center;
+  color: hsl(208deg, 49%, 24%);
+}
+
+.future__text-container {
+  padding: 7rem 10.2rem;
+  width: 60%;
+}
+
+.section__article {
+  padding-bottom: 4.5rem;
+}
+
+.section__title {
+  padding-bottom: 1.7rem;
+  color: hsl(208deg, 49%, 24%);
+}
+
 .hero-image {
   position: relative;
-  background: url("./../images/bg-pattern-intro-desktop.svg") no-repeat center, linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
-  background-size: cover;
+  background: url("./../images/bg-pattern-intro-desktop.svg") no-repeat, linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background-size: 225%, 100%;
+  background-position: -29rem -86rem, 0;
   height: 38rem;
   border-radius: 0 0 0 120px;
-  z-index: 0;
 }
 
 .hero-copy {
@@ -145,7 +224,7 @@ li {
 #navbar,
 .menu,
 .menu-left,
-.menu-right {
+.menu-right, .dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,14 +242,23 @@ li {
   justify-content: space-between;
 }
 
-.logo, li {
+.logo, li, .link {
   list-style: none;
+  text-decoration: none;
   color: hsl(0deg, 100%, 100%);
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .logo {
   padding-right: 3rem;
+}
+
+li {
+  padding-left: 2rem;
+}
+
+li:hover {
+  text-decoration: solid underline hsl(0deg, 100%, 100%) 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+.future-container {
+  position: relative;
+  background: url("./../../images/illustration-editor-desktop.svg") no-repeat right;
+  background-size: 65%;
+  background-position: 49rem 4.7rem;
+  height: 60rem;
+}
+
+.future__heading {
+  padding: 9.5rem 0 0 0;
+  text-align: center;
+  color: ab.$very-dark-blue;
+}
+
+.future__text-container {
+  padding: 7rem 10.2rem;
+  width: 60%;
+}
+
+.section__article {
+  padding-bottom: 4.5rem;
+}
+
+.section__title {
+  padding-bottom: 1.7rem;
+  color: ab.$very-dark-blue;
+}

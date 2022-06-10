@@ -46,6 +46,20 @@ li {
   letter-spacing: 0.055rem;
   line-height: 1.75rem;
 }
+
+.footer__heading,
+.footer-link {
+  font-family: $ubuntu;
+  font-size: 0.91rem;
+}
+
+.footer__heading {
+  font-weight: 500;
+}
+
+.footer-link {
+  font-weight: 400;
+}
 // @media (min-width: 600px){  
 //   .title {
 //     font-size: 0.8rem;

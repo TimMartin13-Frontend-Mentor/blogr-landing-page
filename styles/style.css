@@ -45,6 +45,20 @@ li {
   line-height: 1.75rem;
 }
 
+.footer__heading,
+.footer-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.91rem;
+}
+
+.footer__heading {
+  font-weight: 500;
+}
+
+.footer-link {
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -95,6 +109,20 @@ li {
   line-height: 1.75rem;
 }
 
+.footer__heading,
+.footer-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.91rem;
+}
+
+.footer__heading {
+  font-weight: 500;
+}
+
+.footer-link {
+  font-weight: 400;
+}
+
 #navbar {
   padding: 3.8rem 8rem 3.8rem 10rem;
 }
@@ -143,6 +171,20 @@ li {
   line-height: 1.75rem;
 }
 
+.footer__heading,
+.footer-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.91rem;
+}
+
+.footer__heading {
+  font-weight: 500;
+}
+
+.footer-link {
+  font-weight: 400;
+}
+
 .highlight-btn {
   width: 9rem;
   margin-right: 1rem;
@@ -173,12 +215,57 @@ li {
   color: hsl(356deg, 100%, 66%);
 }
 
+footer {
+  background-color: hsl(240deg, 10%, 16%);
+  height: 22.5rem;
+}
+
+.footer-container {
+  width: 90%;
+  display: flex;
+  padding: 4.3rem 10rem 2rem 9rem;
+  justify-content: space-around;
+}
+
+.categories {
+  width: 71%;
+  padding-left: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__heading {
+  color: hsl(0deg, 100%, 100%);
+  margin-bottom: 2.2rem;
+}
+
+.footer-link {
+  list-style: none;
+  text-decoration: none;
+  color: hsl(240deg, 2%, 79%);
+  margin-bottom: 1rem;
+}
+
+.footer-link:hover {
+  text-decoration: solid underline hsl(0deg, 100%, 100%) 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 100%, 100%);
+}
+
+.attribution a {
+  color: hsl(356deg, 100%, 66%);
+}
+
 .free-container {
   position: relative;
   background: url("./../images/illustration-laptop-desktop.svg") no-repeat right;
   background-size: 68%;
   background-position: -17.5rem 35rem;
-  height: 85rem;
+  height: 92rem;
 }
 
 .free__text-container {
@@ -316,7 +403,7 @@ li {
   justify-content: space-between;
 }
 
-.logo, li, .link {
+.logo, .nav-link {
   list-style: none;
   text-decoration: none;
   color: hsl(0deg, 100%, 100%);
@@ -327,11 +414,11 @@ li {
   padding-right: 3rem;
 }
 
-li {
+.nav-link {
   padding-left: 2rem;
 }
 
-li:hover {
+.nav-link:hover {
   text-decoration: solid underline hsl(0deg, 100%, 100%) 2px;
 }
 

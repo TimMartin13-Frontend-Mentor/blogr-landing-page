@@ -1,0 +1,47 @@
+// Abstracts
+@use "./../abstracts/__abstracts-dir" as ab;
+
+footer {
+  background-color: ab.$very-dark-black-blue;
+  height: 22.5rem;
+}
+
+.footer-container {
+  width: 90%;
+  display: flex;
+  padding: 4.3rem 10rem 2rem 9rem;
+  justify-content: space-around;
+}
+
+.categories {
+  width: 71%;
+  padding-left: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__heading {
+  color: ab.$white; 
+  margin-bottom: 2.2rem;
+}
+
+.footer-link {
+  list-style: none;
+  text-decoration: none;
+  color: ab.$grayish-blue;
+  margin-bottom: 1rem;
+
+  &:hover {
+    text-decoration: solid underline ab.$white 1px;
+  }
+}
+
+.attribution {
+  font-size: 11px; 
+  text-align: center;
+  color: ab.$white; 
+}
+
+.attribution a { 
+  color: ab.$light-red-text; 
+}

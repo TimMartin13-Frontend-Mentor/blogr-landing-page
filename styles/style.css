@@ -6,7 +6,7 @@ body {
   font-size: 16px;
 }
 
-li {
+.menu-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -15,6 +15,15 @@ li {
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.product li {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.product li:hover {
   font-weight: 700;
 }
 
@@ -70,7 +79,7 @@ body {
   font-size: 16px;
 }
 
-li {
+.menu-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -79,6 +88,15 @@ li {
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.product li {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.product li:hover {
   font-weight: 700;
 }
 
@@ -132,7 +150,7 @@ body {
   font-size: 16px;
 }
 
-li {
+.menu-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -141,6 +159,15 @@ li {
 .highlight-btn {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.product li {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.product li:hover {
   font-weight: 700;
 }
 
@@ -192,6 +219,7 @@ li {
   border-radius: 2rem;
   border-style: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .solid {
@@ -289,7 +317,7 @@ footer {
   position: relative;
   background: url("./../images/illustration-editor-desktop.svg") no-repeat right;
   background-size: 65%;
-  background-position: 49rem 4.7rem;
+  background-position: right top;
   height: 60.8rem;
 }
 
@@ -382,44 +410,102 @@ footer {
   color: hsl(0deg, 100%, 100%);
 }
 
-#navbar,
-.menu,
-.menu-left,
-.menu-right, .dropdown {
+nav {
+  padding: 3.5rem 8.4rem 0 10rem;
+}
+
+.dropdown {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-}
-
-#navbar {
-  justify-content: center;
-}
-
-.nav-list {
   width: 100%;
 }
 
-.menu {
+.menu-left,
+.menu-right {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-.logo, .nav-link {
+.menu-left {
+  background-color: brown;
+  width: 40%;
+}
+
+.product,
+.company,
+.connect {
+  position: relative;
+}
+
+.product ul,
+.company ul,
+.connect ul {
+  position: absolute;
+  background: hsl(0deg, 100%, 100%);
   list-style: none;
+  margin: 2rem 0 0 -1.5rem;
+  padding: 2rem 2rem 1rem 2rem;
+  width: 175px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-1.5rem);
+  transition: all 0.4s ease;
+}
+
+.product li,
+.company li,
+.connect li {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.product li a,
+.company li a,
+.connect li a {
+  color: black;
   text-decoration: none;
-  color: hsl(0deg, 100%, 100%);
-  padding: 0 0.5rem;
 }
 
-.logo {
-  padding-right: 3rem;
+.product li:hover,
+.company li:hover,
+.connect li:hover {
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.nav-link {
+.product button:focus + ul,
+.company button:focus + ul,
+.connect button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(-0.5rem);
+}
+
+.menu-right li {
+  list-style: none;
   padding-left: 2rem;
 }
 
-.nav-link:hover {
-  text-decoration: solid underline hsl(0deg, 100%, 100%) 2px;
+.menu-btn {
+  background: none;
+  border: none;
+  color: hsl(0deg, 100%, 100%);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

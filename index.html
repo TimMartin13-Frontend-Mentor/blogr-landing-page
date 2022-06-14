@@ -7,23 +7,57 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <header class="hero-image">
-    <nav id="navbar">
+    <nav>
+      <div class="dropdown">
+        <div class="menu-left">
+          <button class="menu-btn logo"><a href="#"><img src="./images/logo.svg" alt="Blogr logo"></a></button>
+          <div class="product">
+            <button class="menu-btn">Product<div class="arrow"></div></button>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="company">
+            <button class="menu-btn">Company</button>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="connect">
+            <button class="menu-btn">Connect</button>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-right">
+          <button class="menu-btn">Login</button>
+          <!-- <li class="nav-link">Login</li> -->
+          <li><button class="highlight-btn solid">Sign Up</button></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav id="navbar">
       <a href="#" class="logo"><img src="./images/logo.svg" alt="Blogr logo"></a>
       <div class="nav-list">
         <ul class="menu">
           <div class="menu-left">
             <div class="dropdown" data-dropdown>
               <li><a href="#" class="nav-link" data-dropdown-button>Product</a></li>
-              <!-- <div class="down-arrow"></div> -->
               <img src="./images/icon-arrow-light.svg" class="down-arrow">
-              <!-- <div class="dropdown-menu">
-                Overview
-              </div> -->
             </div>
             <li class="nav-link">Company</li><img src="./images/icon-arrow-light.svg" class="down-arrow">
             <li class="nav-link">Connect</li><img src="./images/icon-arrow-light.svg" class="down-arrow">
@@ -34,12 +68,7 @@
           </div>
         </ul>
       </div>
-      <!-- <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button> -->
-    </nav>
+    </nav> -->
     <div class="hero-copy">
       <h1 class="title">A modern publishing platform</h1>
       <p class="description">Grow your audience and build your online brand</p>
@@ -125,25 +154,7 @@
       Coded by <a href="#">Tim Martin</a>.
     </div>
   </footer>
-<!-- Product -->
-  <!-- Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations -->
 
-  <!-- Company -->
-
-  <!-- About
-  Team
-  Blog
-  Careers -->
-
-  <!-- Connect -->
-
-  <!-- Contact
-  Newsletter
-  LinkedIn -->
   <script src="./js/main.js"></script>
 </body>
 </html>

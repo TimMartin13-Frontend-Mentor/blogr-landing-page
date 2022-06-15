@@ -20,12 +20,18 @@ body {
   font-weight: 700;
 }
 
-.product li {
-  font-family: $ubuntu;
-  font-weight: 400;
+.product,
+.company,
+.connect {
+  li {
+    font-family: $ubuntu;
+    font-weight: 400;
+  }
 }
 
-.product li:hover {
+.product li:hover,
+.company li:hover,
+.connect li:hover {
   font-weight: 700;
 }
 

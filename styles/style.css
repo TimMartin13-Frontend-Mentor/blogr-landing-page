@@ -18,12 +18,16 @@ body {
   font-weight: 700;
 }
 
-.product li {
+.product li,
+.company li,
+.connect li {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 
-.product li:hover {
+.product li:hover,
+.company li:hover,
+.connect li:hover {
   font-weight: 700;
 }
 
@@ -91,12 +95,16 @@ body {
   font-weight: 700;
 }
 
-.product li {
+.product li,
+.company li,
+.connect li {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 
-.product li:hover {
+.product li:hover,
+.company li:hover,
+.connect li:hover {
   font-weight: 700;
 }
 
@@ -162,12 +170,16 @@ body {
   font-weight: 700;
 }
 
-.product li {
+.product li,
+.company li,
+.connect li {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 
-.product li:hover {
+.product li:hover,
+.company li:hover,
+.connect li:hover {
   font-weight: 700;
 }
 
@@ -317,7 +329,7 @@ footer {
   position: relative;
   background: url("./../images/illustration-editor-desktop.svg") no-repeat right;
   background-size: 65%;
-  background-position: right top;
+  background-position: 49rem 4.7rem;
   height: 60.8rem;
 }
 
@@ -411,7 +423,7 @@ footer {
 }
 
 nav {
-  padding: 3.5rem 8.4rem 0 10rem;
+  padding: 3.5rem 8.4rem 4rem 10rem;
 }
 
 .dropdown {
@@ -419,6 +431,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.logo {
+  padding-right: 2.5rem;
 }
 
 .menu-left,
@@ -430,8 +446,7 @@ nav {
 }
 
 .menu-left {
-  background-color: brown;
-  width: 40%;
+  width: 42%;
 }
 
 .product,
@@ -482,7 +497,6 @@ nav {
 .product li:hover,
 .company li:hover,
 .connect li:hover {
-  font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -506,6 +520,31 @@ nav {
   color: hsl(0deg, 100%, 100%);
   text-decoration: none;
   cursor: pointer;
+}
+
+.menu-btn:hover {
+  text-decoration: solid underline hsl(0deg, 100%, 100%) 2px;
+}
+
+.arrow {
+  background-image: url("./../images/icon-arrow-light.svg") no-repeat;
+  padding: 0.2rem 0 0 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(231, 229, 229);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
